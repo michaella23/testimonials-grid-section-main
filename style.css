@@ -3,14 +3,12 @@
 }
 
 body {
-    background-image: url('images/favicon-32x32.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: white;
     padding: 50px;
 }
 
 main {
-    padding: 100px;
+    padding: 20px;
     background-color: hsl(210, 46%, 95%);
     color: #fff;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -33,11 +31,14 @@ img {
 .grad {
     display: flex;
     align-items: center;
-    
 }
 
 .grad-info {
-    margin-left: 20px;;
+    margin-left: 20px;
+}
+
+.grad-info > p {
+    margin: 0;
 }
 
 .daniel {
@@ -75,3 +76,38 @@ img {
 .opac {
     opacity: 70%;
 }
+
+
+@media only screen and (min-width: 1000px) {
+    main {
+        padding: 100px;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+            "daniel daniel jonathan kira"
+            "jeanette patrick patrick kira"
+        ;
+    }
+
+   .daniel {
+        grid-area: daniel;
+    }
+
+    .jonathan {
+        grid-area: jonathan;
+    }
+
+    .kira {
+        grid-area: kira;
+    }
+
+    .jeanette {
+        grid-area: jeanette;
+    }
+
+    .patrick {
+        grid-area: patrick;
+    }
+}
+
