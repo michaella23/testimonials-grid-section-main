@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/favicon-32x32.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+main {
+    padding: 100px;
+    background-color: hsl(210, 46%, 95%);
+    color: #fff;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+
+img {
+    max-width: 100%;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.testimony {
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px hsl(0, 0%, 81%);
+}
+
+.grad {
+    display: flex;
+    align-items: center;
+    
+}
+
+.grad-info {
+    margin-left: 20px;;
+}
+
+.daniel {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url('images/bg-pattern-quotation.svg');
+    background-size: 135px;
+    background-position: right 50px top;
+    background-repeat: no-repeat;
+    
+}
+
+.jonathan {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.jeanette {
+    background-color: #fff;
+    color: hsl(217, 19%, 35%);
+}
+
+.patrick {
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(210, 46%, 95%);
+}
+
+.kira {
+    background-color: #fff;
+    color: darkslategray;
+}
+
+.half-opac {
+    opacity: 50%;
+}
+
+.opac {
+    opacity: 70%;
+}
