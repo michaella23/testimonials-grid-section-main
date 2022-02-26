@@ -58,4 +58,4 @@ I want to practice more with device-width cutoffs and grid responsiveness. I att
 ## Author
 
 - Frontend Mentor - [@Michaella](https://www.frontendmentor.io/profile/michaella23)
-- Twitter - [@NotMichaella](https://www.twitter.com/yourusername)
+- Twitter - [@NotMichaella](https://twitter.com/NotMichaella)
