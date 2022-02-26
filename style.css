@@ -22,10 +22,12 @@ img {
 }
 
 .testimony {
-    margin: 15px;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 5px hsl(0, 0%, 81%);
+    width: 100%;
+    height: auto;
 }
 
 .grad {
@@ -82,12 +84,17 @@ img {
     main {
         padding: 100px;
         display: grid;
+        grid-gap: 20px;
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: 
             "daniel daniel jonathan kira"
             "jeanette patrick patrick kira"
         ;
+    }
+
+    .testimony {
+        margin: 0;
     }
 
    .daniel {
