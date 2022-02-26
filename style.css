@@ -4,7 +4,6 @@
 
 body {
     background-color: white;
-    padding: 50px;
 }
 
 main {
@@ -13,6 +12,7 @@ main {
     color: #fff;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 13px;
+    box-shadow: -2px -2px 8px hsl(0, 0%, 86%);
 }
 
 img {
