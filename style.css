@@ -4,6 +4,7 @@
 
 body {
     background-color: white;
+    margin: 0;
 }
 
 main {
@@ -13,6 +14,15 @@ main {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 13px;
     box-shadow: -2px -2px 8px hsl(0, 0%, 86%);
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "daniel"
+    "jonathan"
+    "jeanette"
+    "patrick"
+    "kira"
+    ;
 }
 
 img {
@@ -22,7 +32,7 @@ img {
 }
 
 .testimony {
-    margin: 20px auto;
+    /* margin: 20px auto; */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 5px hsl(0, 0%, 81%);
@@ -49,26 +59,30 @@ img {
     background-size: 135px;
     background-position: right 50px top;
     background-repeat: no-repeat;
-    
+    grid-area: daniel;
 }
 
 .jonathan {
     background-color: hsl(217, 19%, 35%);
+    grid-area: jonathan;
 }
 
 .jeanette {
     background-color: #fff;
     color: hsl(217, 19%, 35%);
+    grid-area: jeanette;
 }
 
 .patrick {
     background-color: hsl(219, 29%, 14%);
     color: hsl(210, 46%, 95%);
+    grid-area: patrick;
 }
 
 .kira {
     background-color: #fff;
     color: darkslategray;
+    grid-area: kira;
 }
 
 .half-opac {
@@ -80,12 +94,31 @@ img {
 }
 
 
-@media only screen and (min-width: 1000px) {
+@media (min-width: 600px) {
     main {
-        padding: 100px;
+        
         display: grid;
         grid-gap: 20px;
-        grid-template-rows: repeat(2, 1fr);
+        /* grid-template-columns: repeat(4, 1fr); */
+        grid-template-areas: 
+            "daniel daniel" 
+            "jonathan kira"
+            "jeanette kira"
+            "patrick patrick"
+        ;
+    }
+
+    .testimony {
+        margin: 0;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    main {
+        height: 98vh;
+        display: grid;
+        grid-gap: 20px;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: 
             "daniel daniel jonathan kira"
@@ -97,24 +130,5 @@ img {
         margin: 0;
     }
 
-   .daniel {
-        grid-area: daniel;
-    }
-
-    .jonathan {
-        grid-area: jonathan;
-    }
-
-    .kira {
-        grid-area: kira;
-    }
-
-    .jeanette {
-        grid-area: jeanette;
-    }
-
-    .patrick {
-        grid-area: patrick;
-    }
 }
 
